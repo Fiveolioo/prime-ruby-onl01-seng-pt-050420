@@ -1,14 +1,13 @@
 # Add  code here!
-def prime?(num) 
-  if num <= 1
-    return false
-  end
-  
-  range = Array (2..num-1)
-  range.each do |i|
-    if num % i == 0
-      return false
+require 'pry'
+def prime?(num)
+  if num > 1
+array_numbers = Array (2..num)
+  array_numbers.each do |nums|
+    num % nums == 0
     end
+   true
+  else
+    false
   end
-  true
 end
